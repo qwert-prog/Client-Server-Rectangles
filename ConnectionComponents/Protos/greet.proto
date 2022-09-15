@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcService";
+
+package greet;
+
+// The greeting service definition.
+service Greeter {
+  // Sends a greeting
+  rpc Connect (Request) returns (Reply);
+}
+
+// Запрос на подключение.
+message Request {
+  int32 Id = 1;
+}
+
+// Ответ при попытке подключения.
+message Reply {
+  int32 Code = 1;
+}
