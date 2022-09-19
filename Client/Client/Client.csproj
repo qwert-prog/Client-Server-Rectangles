@@ -17,11 +17,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\Server\ConnectionComponents\ConnectionComponents.csproj" />
+    <ProjectReference Include="..\..\ConnectionComponents\ConnectionComponents.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Protobuf Include="..\..\..\..\Server\ConnectionComponents\Protos\greet.proto" GrpcServices="Client" />
+    <Protobuf Include="..\..\ConnectionComponents\Protos\greet.proto" GrpcServices="Client" />
   </ItemGroup>
-
 </Project>

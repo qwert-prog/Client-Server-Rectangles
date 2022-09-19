@@ -5,7 +5,7 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client", "Client\Client.csproj", "{BA9E4B22-D005-44FD-B58C-E3A0EAA82F6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectionComponents", "..\..\..\Server\ConnectionComponents\ConnectionComponents.csproj", "{AA28E495-1E8D-42D7-B13A-F9E4930ED716}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectionComponents", "..\ConnectionComponents\ConnectionComponents.csproj", "{AA28E495-1E8D-42D7-B13A-F9E4930ED716}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

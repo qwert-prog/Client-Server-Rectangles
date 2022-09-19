@@ -7,15 +7,28 @@ package greet;
 // The greeting service definition.
 service Greeter {
   // Sends a greeting
-  rpc Connect (Request) returns (Reply);
+  rpc Connect (ConnectionRequest) returns (ConnectionReply);
+  rpc SendRectangle (EmptyMessage) returns (stream RectangleReply);
 }
 
 // Запрос на подключение.
-message Request {
+message ConnectionRequest {
   int32 Id = 1;
 }
 
 // Ответ при попытке подключения.
-message Reply {
+message ConnectionReply {
   int32 Code = 1;
+}
+
+message EmptyMessage{
+
+}
+
+message RectangleReply {
+	int32 Id = 1;
+	int32 X = 2;
+	int32 Y = 3;
+	int32 Height = 4;
+	int32 Width = 5;
 }
