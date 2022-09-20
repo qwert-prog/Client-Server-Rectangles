@@ -4,10 +4,12 @@ option csharp_namespace = "GrpcService";
 
 package greet;
 
-// The greeting service definition.
+
 service Greeter {
-  // Sends a greeting
+  // Попытка подклбчиться к серверу.
   rpc Connect (ConnectionRequest) returns (ConnectionReply);
+
+  // Отправка прямоугольника.
   rpc SendRectangle (EmptyMessage) returns (stream RectangleReply);
 }
 
@@ -21,10 +23,12 @@ message ConnectionReply {
   int32 Code = 1;
 }
 
+// Пустой запрос.
 message EmptyMessage{
 
 }
 
+// Данные о прямоугольнике (Id, координаты, размеры).
 message RectangleReply {
 	int32 Id = 1;
 	int32 X = 2;
